@@ -28,4 +28,7 @@ updateEmployee(employee: Employee) {
     });
 }
 
+deleteEmployee($key:string) {
+  this.employeeList.remove($key);
+}
 }
