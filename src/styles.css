@@ -5,3 +5,19 @@ input.ng-invalid.ng-dirty{
 button:hover,a.btn:hover{
   cursor:pointer;
 }
+.jumbotron{
+  padding:20px 0px 20px 0px;
+  background-color: gainsboro;
+  color: green;
+  font-size:38px;
+}
+.text-center{
+  position: relative;
+
+  padding-top: 5px;
+}
+.logo{
+  position: absolute;
+  left:15px;
+  top:25px;
+}

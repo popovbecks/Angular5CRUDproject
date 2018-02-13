@@ -6,7 +6,8 @@ export class EmployeeService {
 employeeList: AngularFireList<any>;
 selectEmployee: Employee = new Employee();
   constructor(private  firebase: AngularFireDatabase) { }
-getData() {
+
+  getData() {
     this.employeeList = this.firebase.list('employees');
     return this.employeeList;
 }
@@ -15,7 +16,10 @@ insertEmployee(employee: Employee){
       name: employee.name,
       position: employee.position,
       office: employee.office,
-      salary: employee.salary
+      salary: employee.salary,
+      adress: employee.adress,
+      education: employee.education,
+      familyState: employee.familyState
     })
 }
 updateEmployee(employee: Employee) {
@@ -24,7 +28,10 @@ updateEmployee(employee: Employee) {
       name: employee.name,
       position: employee.position,
       office: employee.office,
-      salary: employee.salary
+      salary: employee.salary,
+      adress: employee.adress,
+      education: employee.education,
+      familyState: employee.familyState
     });
 }
 
