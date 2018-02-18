@@ -8,7 +8,7 @@ button:hover,a.btn:hover{
 .jumbotron{
   padding:20px 0px 20px 0px;
   background-color: gainsboro;
-  color: green;
+  color: #00684B;
   font-size:38px;
 }
 .text-center{
@@ -19,5 +19,5 @@ button:hover,a.btn:hover{
 .logo{
   position: absolute;
   left:15px;
-  top:25px;
+  top:46px;
 }

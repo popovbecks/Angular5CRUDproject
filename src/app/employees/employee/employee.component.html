@@ -1,4 +1,5 @@
-<form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)"  >
+<form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)">
+  <input type="hidden" name="$key" #$key="ngModel" [(ngModel)] = "getService().selectEmployee.$key">
   <div class="form-group">
   <label>Фамилия Имя Отчество</label>
   <input class="form-control" name="name" #name="ngModel" [(ngModel)]="getService().selectEmployee.name" placeholder="Введите ФИО" required>

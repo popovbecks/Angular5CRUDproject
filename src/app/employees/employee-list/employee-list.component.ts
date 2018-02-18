@@ -37,7 +37,7 @@ export class EmployeeListComponent implements OnInit {
   }
   onEdit(emp: Employee) {
     this.onNameChange(false)
-      this.employeeService.selectEmployee = emp;
+      this.employeeService.selectEmployee = Object.assign({}, emp);
   }
   onDelete(key: string){
     if(confirm('Вы уверены что хотите удалить этого работника?') == true){
