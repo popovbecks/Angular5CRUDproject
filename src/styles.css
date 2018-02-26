@@ -6,7 +6,7 @@ button:hover,a.btn:hover{
   cursor:pointer;
 }
 .jumbotron{
-  padding:20px 0px 20px 0px;
+  padding:48px 0px 20px 0px;
   background-color: gainsboro;
   color: #00684B;
   font-size:38px;
@@ -20,4 +20,16 @@ button:hover,a.btn:hover{
   position: absolute;
   left:15px;
   top:46px;
+}
+.routerButton{
+  padding: 5px 25px;
+  background-color: green;
+  border-radius: 20px;
+  text-decoration: none;
+  color:black;
+}
+.routerButton:hover{
+  border: 2px solid red;
+  text-decoration: none;
+  color:white;
 }

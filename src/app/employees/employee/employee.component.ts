@@ -31,8 +31,7 @@ export class EmployeeComponent implements OnInit {
       this.employeecompService.insertEmployee(employeeForm.value);
       this.tostr.success('Успешно добавлен', 'Employee Register');
       this.onNameChange(true);
-    }
-    else{
+    }else {
       this.employeecompService.updateEmployee(employeeForm.value);
       this.resetForm(employeeForm);
       this.tostr.success('Успешно изменен', 'Employee Register');
